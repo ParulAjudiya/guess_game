@@ -17,7 +17,7 @@
                     </div>
                 @endif
                 <div class="col-lg-4">
-                    <form method="POST" action="/process_to_join_game">
+                    <form method="POST" action="{{ url('/process_to_join_game') }}">
                         @csrf
                         @method('POST')
                         <input type="text" name="player_name"  class="form-control"/>

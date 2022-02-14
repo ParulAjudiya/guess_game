@@ -13,7 +13,7 @@
                             </ul>
                         </div>
                     @endif
-                    <form method="POST" action="/new_game">
+                    <form method="POST" action="{{ url('/new_game') }}">
                         @csrf
                         @method('POST')
                         <label class="text-black">Your Name</label>
