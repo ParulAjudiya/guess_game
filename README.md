@@ -4,34 +4,16 @@ Please follow below steps to setup project.
 git clone https://github.com/ParulAjudiya/guess_game.git
 -> As result, guess_game named directory downloaded in your local.
 
-2. cd into your project
-cd projectName
--> for example: cd guess_game
-
+2. cd guess_game
 
 3. Install Composer Dependencies please run below command.
 composer install
 
-4. Create a copy of your .env file
-.env files are not committed to source control for security reasons. But there is a .env.example which is a template of the .env file that the project have. So we will make a copy of the .env.example file and create a .env file from it.
-cp .env.example .env
+4. create empty database named "guess_game" in mysql. Set database credential in .env file which is you can find on root place.
+This file have secure env variables which is different for each white-lable. but I commited here for your convience.
 
-OR
-
-.env file is attached with email. Please find it from there.
-
-5. Create an empty database for our application
-	After created empty database, please configure db connection in .env file as below detail.
-	DB_CONNECTION=mysql
-	DB_HOST=localhost
-	DB_PORT=3306
-	DB_DATABASE=guess_game
-	DB_USERNAME=root
-	DB_PASSWORD=
-
-6. Migrate the database - run below command - It will create table inside the database.
+5. Migrate the database - Run below command - It will create table inside the database.
 php artisan migrate
 
-
-7. To start laravel server 
-php artisan serve
+5. Use below url to see the project
+http://localhost/guess_game/
